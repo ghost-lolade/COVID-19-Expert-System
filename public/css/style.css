@@ -14,11 +14,12 @@ p {
 }
 
 body {
-  background-color: #fff;
-  background-image:
-  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-  linear-gradient(#eee .1em, transparent .1em);
-  background-size: 100% 1.2em;
+  background-color: #000;
+  background-image: url(COVID-19-Home-Slider-image.png);
+  /* background-attachment: fixed; */
+  /* linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), */
+  /* linear-gradient(#eee .1em, transparent .1em); */
+  /* background-size: 100% */
 }
 
 .fixed-container {
