@@ -184,11 +184,11 @@ choiceBtns.forEach((btn, i) => {
       fetch(requestUrl)
         .then(response => response.json())
         .then(data => {
-          fetch(`save/${JSON.stringify(data)}/${JSON.stringify(answers)}`)
-            .then(response => response.json())
-            .then(fetch => {
-              console.log(fetch)
-            })
+          // fetch(`save/${JSON.stringify(data)}/${JSON.stringify(answers)}`)
+          //   .then(response => response.json())
+          //   .then(fetch => {
+          //     console.log(fetch)
+          //   })
           // console.log(data)
           displayResult(data.disease, data.percentage)
           // loadXMLDoc();
