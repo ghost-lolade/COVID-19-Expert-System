@@ -205,10 +205,10 @@ function displayResult(disease, percentage) {
     const [d1, d2] = disease;
     const [p1, p2] = percentage;
     diseaseHTML = `${findDiseaseName(d1)} or ${findDiseaseName(d2)}`;
-    percentageHTML = `Diagnosis confidence: ${p1}% and ${p2}%`;
+    percentageHTML = `Diagnosis confidence: ${p1}% and ${p2}% <div>Kindly see a doctor</div>`;
   } else if (disease) {
     diseaseHTML = `${findDiseaseName(disease)}`;
-    percentageHTML = `Diagnosis confidence: ${percentage}%`;
+    percentageHTML = `Diagnosis confidence: ${percentage}% <div>Kindly see a doctor</div>`;
   } else {
     diseaseHTML = "";
     percentageHTML = "";
