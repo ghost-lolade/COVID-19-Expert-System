@@ -3,9 +3,13 @@
   <div class="question-container" data-number="0">
     <div class="question">
       <h1>COVID-19 & Other Respiratory Diseases Expert System</h1>
-      <small>Developed by Lolade with Minion brains :)</small>
-      <p>What is this?</p>
-      <p>Answer 13 questions and we will tell you if you have a chance of having COVID-19 or other respiratory diseases.</p>
+      <br>
+      <h6>YUSUF RASHEED AJANI</h6>
+      <h6>BALOGUN MORUFAH ADENIKE</h6>
+      <h6>ALAGBU UGOCHUKWU</h6>
+      <br>
+      <small>Developed with Minion brains :)</small>
+      <p>Answer 14 questions and we will tell you if you have a chance of having COVID-19 or other respiratory diseases.</p>
     </div>
     <div class="input">
       <button class="submit" data-answer-type="choice">OK ✔</button>
@@ -248,9 +252,25 @@
       </div>
     </div>
   </div>
+  <!-- question 14 -->
+  <div class="question-container" data-number="15">
+    <div class="question">
+      <h1>14. Do you experience loss of taste or smell?</h1>
+      <p>Symptoms of some respiratory diseases like COVID 19 can cause loss of taste.</p>
+      <p>Source: <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/long-term-effects.html">www.cdc.gov</a></p>
+    </div>
+    <div class="input">
+      <div>
+        <button data-question="lossOfTasteOrSmell" data-choice="Y" data-answer-type="choice" class="submit" style="width: 4rem;">Yes</button>
+      </div>
+      <div>
+        <button data-question="lossOfTasteOrSmell" data-choice="N" data-answer-type="choice" class="submit" style="width: 4rem;">No</button>
+      </div>
+    </div>
+  </div>
 
   <!--  Result -->
-  <div class="question-container" data-number="15">
+  <div class="question-container" data-number="16">
     <div class="question">
       <h1 id="username">,</h1>
       <p id="youhave">you probably have</p>
@@ -272,6 +292,7 @@
         <p id="review-rapidHeartbeat">Rapid Heartbeat: </p>
         <p id="review-wheezing">Wheezing: </p>
         <p id="review-duration">Duration of Symptoms: </p>
+        <p id="review-lossOfTasteOrSmell">Loss of taste or smell: </p>
       </details>
       <button class="try-agn-btn" onclick="location.reload();">Try again</button>
 

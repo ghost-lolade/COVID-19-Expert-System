@@ -14,6 +14,7 @@ const facts = {
   rapidHeartbeat: "N",
   shortnessOfBreath: "Y",
   wheezing: "Y",
+  lossOfTasteOrSmell: "N"
 };
 
 const answers = {
@@ -30,7 +31,8 @@ const answers = {
   shortnessOfBreath: undefined,
   rapidHeartbeat: undefined,
   wheezing: undefined,
-  duration: undefined
+  duration: undefined,
+  lossOfTasteOrSmell: undefined
 };
 
 const diseaseDescriptions = [
@@ -176,13 +178,20 @@ choiceBtns.forEach((btn, i) => {
 
     // if it is the last submit button:
     // get diagnosis and updates the state
-    if (currentCardNumber === 14) {
+    if (currentCardNumber === 15) {
       const esUrl = 'diagnosis/';
       const requestUrl = `${esUrl}${JSON.stringify(facts)}`;
       fetch(requestUrl)
         .then(response => response.json())
         .then(data => {
+          fetch(`save/${JSON.stringify(data)}/${JSON.stringify(answers)}`)
+            .then(response => response.json())
+            .then(fetch => {
+              console.log(fetch)
+            })
+          // console.log(data)
           displayResult(data.disease, data.percentage)
+          // loadXMLDoc();
         });
     }
   })
@@ -217,6 +226,8 @@ function displayResult(disease, percentage) {
   for (const ans in answers) {
     document.getElementById(`review-${ans}`).innerHTML += `${answers[ans]}`;
   }
+  // console.log(answers)
+  
 }
 
 function findDiseaseName(code) {
@@ -226,3 +237,21 @@ function findDiseaseName(code) {
     }
   }
 }
+// function loadXMLDoc()
+// {
+//   var http = new XMLHttpRequest();
+//   var url = 'test.php';
+//   var params = 'Hello there';
+//   http.open('POST', url, true);
+
+  
+//   //Send the proper header information along with the request
+//   http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  
+//   http.onreadystatechange = function() {//Call a function when the state changes.
+//       if(http.readyState == 4 && http.status == 200) {
+//           console.log(http.responseText);
+//       }
+//   }
+//   http.send(params);
+// }

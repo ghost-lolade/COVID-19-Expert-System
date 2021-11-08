@@ -98,7 +98,7 @@
     {
         "disease": "covid-19",
         "ageGroup": ["middleAged", "elderly"],
-        "gender": "male",
+        "gender": ["female", "male"],
         "familyHistory": "N",
         "smokingHistory": "N",
         "duration": ">1 week, <4 weeks",
@@ -109,7 +109,8 @@
         "rapidBreathing": "Y",
         "rapidHeartbeat": "Y",
         "shortnessOfBreath": "Y",
-        "wheezing": "N"
+        "wheezing": "N",
+        "lossOfTasteOrSmell" : "Y"
     },
     {
         "disease": "croup",
