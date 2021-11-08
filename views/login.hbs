@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">EXPERT SYSTEM FOR COVID 19 DIAGNOSIS</a>
+<nav class="navbar">
+    <a href="#">EXPERT SYSTEM FOR COVID 19 DIAGNOSIS</a>
 </nav>
 
-<div class="row justify-content-md-center" style="margin-top: 100px">
+<div class="form-container">
     <div class="col-md-6">
 
         {{#if message}}
@@ -12,15 +12,15 @@
         {{/if}}
 
         <form method="POST" action="/login">
-            <div class="form-group">
+            <div>
                 <label for="exampleInputEmail1">Email address</label>
-                <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                <input name="email" type="email" id="exampleInputEmail1" placeholder="Enter email">
             </div>
-            <div class="form-group">
+            <div>
                 <label for="exampleInputPassword1">Password</label>
-                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input name="password" type="password" id="exampleInputPassword1" placeholder="Password">
             </div>
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary btn-lg">Login</button>
         </form>
     </div>
 </div>

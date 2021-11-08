@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">EXPERT SYSTEM FOR COVID 19 DIAGNOSIS</a>
+<nav class="navbar">
+    <a href="#">EXPERT SYSTEM FOR COVID 19 DIAGNOSIS</a>
 </nav>
 
-<div class="row justify-content-md-center" style="margin-top: 30px">
+<div class="form-container">
     <div class="col-md-4">
 
         {{#if message}}
@@ -12,33 +12,33 @@
         {{/if}}
 
         <form method="POST" action="/register">
-            <div class="form-group">
-                <label for="firstNameInput" style="color: blue;">First Name</label>
-                <input name="firstName" type="text" class="form-control" id="firstNameInput">
+            <div>
+                <label for="firstNameInput">First Name</label>
+                <input name="firstName" type="text" id="firstNameInput">
             </div>
 
-            <div class="form-group">
+            <div>
                 <label for="lastNameInput">Last Name</label>
-                <input name="firstName" type="text" class="form-control" id="lastNameInput">
+                <input name="firstName" type="text" id="lastNameInput">
             </div>
 
-            <div class="form-group">
+            <div>
                 <label for="emailInput">Email address</label>
-                <input name="email" type="email" class="form-control" id="emailInput" placeholder="Enter email">
+                <input name="email" type="email" id="emailInput" placeholder="Enter email">
             </div>
 
-            <div class="form-group">
+            <div>
                 <label for="passwordInput">Password</label>
-                <input name="password" type="password" class="form-control" id="passwordInput" placeholder="Password">
+                <input name="password" type="password" id="passwordInput" placeholder="Password">
             </div>
 
-            <div class="form-group">
+            <div>
                 <label for="confirmPasswordInput">Confirm Password</label>
-                <input name="confirmPassword" type="password" class="form-control" id="confirmPasswordInput"
+                <input name="confirmPassword" type="password" id="confirmPasswordInput"
                     placeholder="Re-enter your password here">
             </div>
 
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary btn-lg">Login</button>
         </form>
     </div>
 </div>
